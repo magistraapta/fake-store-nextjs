@@ -2,7 +2,7 @@ import React from 'react'
 import Card from "../components/Card";
 import Link from 'next/link';
 export default async function page() {
-const getData = await fetch('https://fakestoreapi.com/products');
+    const getData = await fetch('https://fakestoreapi.com/products');
   const products = await getData.json();
   return (
     <div className='mx-[50px]'>
@@ -12,6 +12,7 @@ const getData = await fetch('https://fakestoreapi.com/products');
             return <div key={product.id}>
                 <Link href={`product/${product.id}`}>
                 <Card 
+                    
                     title={product.title} 
                     image={product.image} 
                     price={product.price} 

@@ -7,7 +7,7 @@ const getData = await fetch('https://fakestoreapi.com/products');
   return (
     <div className='mx-[50px]'>
         <div className=''>
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-3 gap-4">
           {products.map((product) => {
             return <div key={product.id}>
                 <Link href={`product/${product.id}`}>

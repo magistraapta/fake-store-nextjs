@@ -1,8 +1,7 @@
 import React from 'react'
 import Navbar from '@/app/components/Navbar'
 export default async function page({params}) {
-    const id = params.id
-    const getSingle = await fetch(`https://fakestoreapi.com/products/${id}`)
+    const getSingle = await fetch(`https://fakestoreapi.com/products/${params.slug}`)
     const product = await getSingle.json()
   return (
     <div>

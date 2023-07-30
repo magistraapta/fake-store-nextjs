@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Link from 'next/link'
 export default function Navbar() {
   return (
     <div className='my-12 mx-[50px] '>
         <div className='w-5/12 flex items-center justify-between'>
-            <h1 className='text-3xl text-red-600 font-bold'>Fake Store</h1>
+            <h1 className='text-3xl text-red-600 font-bold'><Link href={'/'}>FakeStore</Link></h1>
             <ul className='flex w-7/12 justify-between'>
                 <li>men</li>
                 <li>women</li>
